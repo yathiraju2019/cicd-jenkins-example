@@ -20,8 +20,8 @@ pipeline {
                                   usernameVariable: 'USERNAME',
                                   passwordVariable: 'PASSWORD']]) {
 
-                    'cf login -a http://api.run.pivotal.io -u $USERNAME -p $PASSWORD'
-                    'cf push'
+                    cd 'C:\Users\ThisPc\cf login -a http://api.run.pivotal.io -u $USERNAME -p $PASSWORD'
+                    cd 'C:\Users\ThisPc\cf push'
                 }
             }
 
